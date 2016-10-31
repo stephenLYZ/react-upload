@@ -1,11 +1,11 @@
 import React from 'react'
 import Dropzone from 'react-dropzone'
 import request from 'superagent'
+import config from '../upload.config'
 import './App.css'
 
-const CLOUDINARY_UPLOAD_PRESET = 's9vtk4yj'
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/stephenliu/upload'
-const loading = ''
+const CLOUDINARY_UPLOAD_PRESET = config.CLOUDINARY_UPLOAD_PRESET
+const CLOUDINARY_UPLOAD_URL = config.CLOUDINARY_UPLOAD_URL
 
 export default class App extends React.Component {
   constructor(props) {
